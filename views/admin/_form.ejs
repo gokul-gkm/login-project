@@ -1,0 +1,29 @@
+ <!-- form handling -->
+ <form action="/admin/api/users" method="POST" id="add_user">
+    <div class="new_user">
+        
+        <div class="form-group">
+            <label for="name" class="text-light">Username</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" value="" placeholder="Enter username" required>
+            <div class="msg" style="color: red;"><%= messages.usernameError %></div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="text-light">Email</label>
+            <input type="hidden" name="id" value="">
+            <input type="email" name="email" value="" placeholder="Enter email" required>
+            <div class="msg" style="color: red;"><%= messages.emailError %></div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="text-light">Password</label>
+            <input type="password" name="password" value="" placeholder="Enter the password" required>
+            <div class="msg" style="color: red;"><%= messages.passwordError %></div>
+        </div>
+        
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>

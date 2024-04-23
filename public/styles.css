@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('/assets/black.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.login-btn{
+    background-color: #9213DF;
+}
+.login-title{
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+}
+
+.login-text{
+    font-size: .8em;
+}
+.signup-link{
+    color: #080e4e;
+}
+.bg-gold{
+    background-color: #ffd700;
+}
+
+.border-bottom-black{
+    border-bottom: 2px solid #ffd700;
+    box-shadow: 2px 2px 0px #333;
+}
+
+.border-gold{
+    border: 1px solid #ffd700;
+    box-shadow: 2px 2px 0px #333;
+}
+
+.nav-title{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.box-shadow{
+    box-shadow: 2px 2px 0px #333;
+}
+
+.card:hover{
+    transform: scale(1.015);
+    transition: 250ms;
+}
+
+.description{
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.text-golden{
+    color: #ffd700;
+}
+
+.border-gold:hover{
+    border: 1px solid #ffd700;
+    box-shadow: 1px 3px 10px #e9ecef;
+  }
+  .card{
+    overflow: hidden;
+  }
+
+  .card-img-top{
+    object-fit: cover;
+    object-position: center;
+    transition: 250ms scale ease-in-out;
+  }
+
+  .card-img-top:hover{
+    scale: 1.075;
+  }
+
+  .logout-form{
+    padding: 0;
+    background-color: transparent;
+  }

@@ -1,0 +1,44 @@
+
+<!-- include header -->
+<%- include('admin/_header') %>
+<!-- /include header -->
+
+    <!-- Main Site -->
+    <main id="site-main" class="">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <a href="/admin/add-user" class="border-shadow">
+                    <span class="text-gradient">New User <i class="fas fa-user"></i></span>
+                </a>
+            </div>
+
+            <!-- form handling -->
+            <form action="/" method="POST">
+                <table class="table" id="usersTable">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th class="text-center bg-black">ID</th>
+                            <th class="text-center bg-black">Username</th>
+                            <th class="text-center bg-black">Email</th>
+                            <th class="text-center bg-black">Password</th>
+                            <th class="text-center bg-black">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%- include('admin/_show') %>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%- include('admin/_footer') %>
+<!-- /include footer -->
+
+<script>$(document).ready( function () {
+    $('#usersTable').DataTable();
+} );
+
+</script>

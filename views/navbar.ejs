@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom-black">
+    <div class="container">
+        <a class="navbar-brand nav-title" href="#">Movie Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto ">
+                <li class="nav-item active ps-4">
+                    <a class="nav-link" href="/route/home">Home</a>
+                </li>
+                <li class="nav-item ps-4">
+                    <span class="nav-link bg-black  rounded-pill px-5 box-shadow bold fs-4 py-1 border-gold text-gold text-center" style="color: #ffd700;"><b><%= user?user:'User' %></b></span>
+                </li>
+                <li class="nav-item ps-4">
+                    <form action="/route/logout" method="post" class="logout-form">
+                        <button type="submit" class="bg-black border-gold rounded-pill px-4 text-light py-2">Logout</button>
+                    </form>
+
+                    <!-- <a class="nav-link bg-dark px-4 rounded-pill border-gold text-center" href="/route/logout">logout</a> -->
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

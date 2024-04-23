@@ -1,0 +1,23 @@
+<%-include('header')-%>
+<%-include('navbar')-%>
+
+<div class="container mt-5 d-flex align-items-center justify-content-center" data-bs-theme="dark">
+    <div class="row ">
+        <% movies.forEach(movie => { %>
+        <div class="col-xl-4 col-md-6  p-3">
+            <div class="card bg-black rounded-4 border-gold" style="width: 22rem; height: 40rem;">
+                <img src="/assets/movies_img/<%= movie.img %>" class="card-img-top rounded-4" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold fs-3 text-golden"><%= movie.title %></h5>
+                    <b><p class="card-text text-light"><%= movie.genre %></p></b>
+                    <p class="card-text description mt-2 text-warning"><%= movie.description %></p>
+                    <a href="<%= movie.trailer %>" class="btn btn-warning bg-gold fw-bold border-gold">WATCH TRAILER</a>
+                </div>
+            </div>
+        </div>
+        <% }); %>
+       
+    </div>
+</div>
+
+<%-include('footer')-%>
